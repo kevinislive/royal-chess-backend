@@ -1,0 +1,2 @@
+# Royal Chess backend V3.3
+Requires Node.js 22.13+ and no npm dependencies. Copy .env.example to .env, set PUBLIC_URL to frontend origin, then `npm start`. Local port defaults to 4000. `npm test` runs backend regression tests. `/health` returns JSON. On Railway deploy this folder with included Dockerfile, preserve /app/data volume, and configure PUBLIC_URL and DB_PATH as described in DEPLOY.md. The separate frontend is required to play. Existing active rooms reset at restart; accounts persist on the mounted SQLite volume. Never commit your .env or data folder.

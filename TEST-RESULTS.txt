@@ -1,0 +1,158 @@
+
+> royal-chess-backend@3.3.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: all four AI levels return legal moves
+ok 1 - all four AI levels return legal moves
+  ---
+  duration_ms: 289.528267
+  type: 'test'
+  ...
+# Subtest: all included puzzles have a mate in one
+ok 2 - all included puzzles have a mate in one
+  ---
+  duration_ms: 4.74757
+  type: 'test'
+  ...
+# Subtest: shuffle generates bishops on opposite colors, king between rooks and rook-file castling rights
+ok 3 - shuffle generates bishops on opposite colors, king between rooks and rook-file castling rights
+  ---
+  duration_ms: 2.79901
+  type: 'test'
+  ...
+# Subtest: teleport is single use per side and replay preserves it
+ok 4 - teleport is single use per side and replay preserves it
+  ---
+  duration_ms: 3.017038
+  type: 'test'
+  ...
+# Subtest: mystery board does not mutate authoritative position
+ok 5 - mystery board does not mutate authoritative position
+  ---
+  duration_ms: 0.313862
+  type: 'test'
+  ...
+# Subtest: standard position perft 20, 400, 8902, 197281
+ok 6 - standard position perft 20, 400, 8902, 197281
+  ---
+  duration_ms: 579.158031
+  type: 'test'
+  ...
+# Subtest: castling, pins and captures perft: Kiwipete
+ok 7 - castling, pins and captures perft: Kiwipete
+  ---
+  duration_ms: 310.172893
+  type: 'test'
+  ...
+# Subtest: Fool’s mate and illegal move rejection
+ok 8 - Fool’s mate and illegal move rejection
+  ---
+  duration_ms: 1.645415
+  type: 'test'
+  ...
+# Subtest: en passant removes the correct pawn
+ok 9 - en passant removes the correct pawn
+  ---
+  duration_ms: 1.104441
+  type: 'test'
+  ...
+# Subtest: castling relocates king and rook and clears rights
+ok 10 - castling relocates king and rook and clears rights
+  ---
+  duration_ms: 0.26646
+  type: 'test'
+  ...
+# Subtest: castling through check is illegal
+ok 11 - castling through check is illegal
+  ---
+  duration_ms: 0.191999
+  type: 'test'
+  ...
+# Subtest: four promotion options and underpromotion
+ok 12 - four promotion options and underpromotion
+  ---
+  duration_ms: 0.424739
+  type: 'test'
+  ...
+# Subtest: threefold claim and automatic fivefold
+ok 13 - threefold claim and automatic fivefold
+  ---
+  duration_ms: 10.51165
+  type: 'test'
+  ...
+# Subtest: stalemate and fifty-move rule
+ok 14 - stalemate and fifty-move rule
+  ---
+  duration_ms: 0.415646
+  type: 'test'
+  ...
+# (node:1724) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: real HTTP LAN server: rooms, seats, SSE sync, validation, reconnect and rematch
+ok 15 - real HTTP LAN server: rooms, seats, SSE sync, validation, reconnect and rematch
+  ---
+  duration_ms: 118.524129
+  type: 'test'
+  ...
+# (node:1750) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: public matchmaking, private isolation, clocks, spectator access, chat and cancellation over HTTP
+ok 16 - public matchmaking, private isolation, clocks, spectator access, chat and cancellation over HTTP
+  ---
+  duration_ms: 62.66186
+  type: 'test'
+  ...
+# (node:1761) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: Chess960: stationary king, stationary rook, swap, queenside, black, and rights
+ok 17 - Chess960: stationary king, stationary rook, swap, queenside, black, and rights
+  ---
+  duration_ms: 3.845113
+  type: 'test'
+  ...
+# Subtest: Chess960: attacked king path, blocked path, and rook uncovering attack forbidden
+ok 18 - Chess960: attacked king path, blocked path, and rook uncovering attack forbidden
+  ---
+  duration_ms: 0.758821
+  type: 'test'
+  ...
+# Subtest: persistent SQLite registration, hashed passwords, login and logout
+ok 19 - persistent SQLite registration, hashed passwords, login and logout
+  ---
+  duration_ms: 233.240955
+  type: 'test'
+  ...
+# Subtest: rated public match updates both Elo ratings once; illegal moves rejected; moderation reports and admin suspension
+ok 20 - rated public match updates both Elo ratings once; illegal moves rejected; moderation reports and admin suspension
+  ---
+  duration_ms: 151.382456
+  type: 'test'
+  ...
+# Subtest: 2v2 four-seat public match alternates teammates and rejects out-of-turn teammate
+ok 21 - 2v2 four-seat public match alternates teammates and rejects out-of-turn teammate
+  ---
+  duration_ms: 28.205549
+  type: 'test'
+  ...
+# Subtest: voice signals only reach opposite authorized seat, not spectators
+ok 22 - voice signals only reach opposite authorized seat, not spectators
+  ---
+  duration_ms: 11.299687
+  type: 'test'
+  ...
+# Subtest: Stripe checkout server-priced and signed idempotent payment fulfillment
+ok 23 - Stripe checkout server-priced and signed idempotent payment fulfillment
+  ---
+  duration_ms: 53.977147
+  type: 'test'
+  ...
+1..23
+# tests 23
+# suites 0
+# pass 23
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 993.489481
